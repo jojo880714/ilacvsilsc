@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ILAC vs ILSC｜加拿大語言學校完整攻略 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --red: #C41E3A;
+  --red-light: #e8284a;
+  --red-pale: #fdf0f2;
+  --dark: #12121e;
+  --dark2: #1e1e32;
+  --navy: #1a2744;
+  --cream: #F8F4EE;
+  --cream2: #F0EAE0;
+  --white: #ffffff;
+  --gray: #6b7280;
+  --gray-light: #f3f4f6;
+  --border: #e5e7eb;
+  --ilac: #1a65c8;
+  --ilac-light: #dbeafe;
+  --ilsc: #0f7a5a;
+  --ilsc-light: #d1fae5;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.14);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  background: var(--dark);
+  position: relative;
+  overflow: hidden;
+  padding: 72px 24px 80px;
+  text-align: center;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(196,30,58,0.28) 0%, transparent 70%);
+}
+.hero-leaf {
+  position: absolute;
+  font-size: 260px;
+  opacity: 0.04;
+  top: -40px;
+  right: -40px;
+  line-height: 1;
+  pointer-events: none;
+}
+.hero-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--red);
+  background: rgba(196,30,58,0.15);
+  border: 1px solid rgba(196,30,58,0.3);
+  padding: 4px 14px;
+  border-radius: 99px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 56px);
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  position: relative;
+}
+.hero h1 span { color: var(--red); }
+.hero p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.6);
+  max-width: 520px;
+  margin: 0 auto 32px;
+  position: relative;
+}
+.hero-chips {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.hero-chip {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 6px 14px;
+  border-radius: 99px;
+}
+
+/* NAV */
+.nav-wrap {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.nav-inner::-webkit-scrollbar { display: none; }
+.nav-btn {
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all .2s;
+  font-family: 'DM Sans', sans-serif;
+}
+.nav-btn:hover { color: var(--dark); }
+.nav-btn.active { color: var(--red); border-bottom-color: var(--red); }
+
+/* MAIN */
+.main { max-width: 1100px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* SECTION TITLE */
+.sec-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+.sec-sub { font-size: 14px; color: var(--gray); margin-bottom: 28px; }
+
+/* TABS */
+.tab-group { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
+.tab-btn {
+  padding: 8px 20px;
+  border-radius: 99px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  color: var(--gray);
+  cursor: pointer;
+  transition: all .2s;
+  font-family: 'DM Sans', sans-serif;
+}
+.tab-btn:hover { border-color: var(--red); color: var(--red); }
+.tab-btn.active { background: var(--red); color: white; border-color: var(--red); }
+.tab-btn.ilac-tab.active { background: var(--ilac); border-color: var(--ilac); }
+.tab-btn.ilsc-tab.active { background: var(--ilsc); border-color: var(--ilsc); }
+
+/* PANEL */
+.panel { display: none; animation: fadeIn .3s ease; }
+.panel.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* CARDS GRID */
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 720px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+/* CARD */
+.card {
+  background: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: transform .2s, box-shadow .2s;
+}
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.card-icon {
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.card-title { font-size: 16px; font-weight: 600; color: var(--dark); }
+.card-sub { font-size: 12px; color: var(--gray); }
+
+/* SCHOOL BADGE */
+.school-pill {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 99px;
+  margin: 0 2px;
+}
+.pill-ilac { background: var(--ilac-light); color: var(--ilac); }
+.pill-ilsc { background: var(--ilsc-light); color: var(--ilsc); }
+.pill-both { background: #f3e8ff; color: #6d28d9; }
+
+/* INFO ROW */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray-light);
+  gap: 12px;
+}
+.info-row:last-child { border-bottom: none; }
+.info-label { font-size: 13px; color: var(--gray); flex-shrink: 0; width: 120px; }
+.info-value { font-size: 13px; color: var(--dark); font-weight: 500; text-align: right; }
+
+/* SECTION DIVIDER */
+.section-gap { margin-bottom: 56px; }
+
+/* CITY FILTER */
+.city-filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.city-btn {
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  color: var(--gray);
+  cursor: pointer;
+  transition: all .2s;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.city-btn:hover { border-color: var(--dark); color: var(--dark); }
+.city-btn.active { background: var(--dark); color: white; border-color: var(--dark); }
+.city-item { display: none; }
+.city-item.show { display: block; }
+
+/* INTENSITY BARS */
+.intensity-section { margin-bottom: 40px; }
+.bar-group { margin-bottom: 20px; }
+.bar-school-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 12px;
+}
+.bar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.bar-name {
+  font-size: 13px;
+  color: var(--dark);
+  width: 130px;
+  flex-shrink: 0;
+}
+.bar-track {
+  flex: 1;
+  height: 10px;
+  background: var(--gray-light);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 1s cubic-bezier(.4,0,.2,1);
+}
+.bar-val {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark);
+  width: 72px;
+  text-align: right;
+}
+.bar-note {
+  font-size: 11px;
+  color: var(--gray);
+  margin-top: 2px;
+  margin-left: 142px;
+}
+
+/* CALCULATOR */
+.calc-card {
+  background: var(--dark);
+  border-radius: 20px;
+  padding: 32px;
+  color: white;
+}
+.calc-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.calc-sub { font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 28px; }
+.calc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
+@media (max-width: 600px) { .calc-grid { grid-template-columns: 1fr; } }
+.calc-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 8px;
+}
+.calc-select {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: white;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.5)' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+}
+.calc-select:focus { outline: none; border-color: var(--red); }
+.calc-select option { background: var(--dark2); }
+.calc-result {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.calc-items { display: flex; gap: 24px; flex-wrap: wrap; }
+.calc-item { }
+.calc-item-label { font-size: 11px; color: rgba(255,255,255,0.4); margin-bottom: 2px; }
+.calc-item-val { font-size: 18px; font-weight: 600; color: rgba(255,255,255,0.9); }
+.calc-total-label { font-size: 12px; color: rgba(255,255,255,0.4); margin-bottom: 4px; text-align: right; }
+.calc-total-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1;
+}
+.calc-total-sub { font-size: 11px; color: rgba(255,255,255,0.3); text-align: right; }
+
+/* COMPARISON TABLE */
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.comp-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  background: var(--cream2);
+  color: var(--gray);
+}
+.comp-table th:nth-child(2) { background: rgba(26,101,200,0.08); color: var(--ilac); }
+.comp-table th:nth-child(3) { background: rgba(15,122,90,0.08); color: var(--ilsc); }
+.comp-table td {
+  padding: 13px 16px;
+  font-size: 13px;
+  color: var(--dark);
+  border-bottom: 1px solid var(--gray-light);
+  vertical-align: top;
+}
+.comp-table tr:last-child td { border-bottom: none; }
+.comp-table td:nth-child(2) { background: rgba(26,101,200,0.03); }
+.comp-table td:nth-child(3) { background: rgba(15,122,90,0.03); }
+.comp-table td:first-child { color: var(--gray); font-weight: 500; }
+.win { color: var(--red); font-weight: 600; }
+
+/* QUIZ */
+.quiz-card {
+  background: var(--white);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  padding: 32px;
+  box-shadow: var(--shadow);
+  max-width: 680px;
+  margin: 0 auto;
+}
+.quiz-progress {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 28px;
+}
+.quiz-dot {
+  height: 4px;
+  flex: 1;
+  border-radius: 99px;
+  background: var(--gray-light);
+  transition: background .3s;
+}
+.quiz-dot.done { background: var(--red); }
+.quiz-q {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.quiz-options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+.quiz-opt {
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--dark);
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+  transition: all .15s;
+}
+.quiz-opt:hover { border-color: var(--red); background: var(--red-pale); }
+.quiz-opt.selected { border-color: var(--red); background: var(--red-pale); color: var(--red); font-weight: 500; }
+.quiz-btns { display: flex; gap: 10px; justify-content: flex-end; }
+.btn {
+  padding: 11px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: all .15s;
+}
+.btn-primary { background: var(--red); color: white; }
+.btn-primary:hover { background: var(--red-light); }
+.btn-ghost { background: var(--gray-light); color: var(--gray); }
+.btn-ghost:hover { background: var(--border); }
+.quiz-result {
+  display: none;
+  animation: fadeIn .4s ease;
+}
+.result-box {
+  text-align: center;
+  padding: 32px 20px;
+}
+.result-emoji { font-size: 56px; margin-bottom: 16px; }
+.result-school {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.result-ilac { color: var(--ilac); }
+.result-ilsc { color: var(--ilsc); }
+.result-both { color: var(--red); }
+.result-desc { font-size: 15px; color: var(--gray); line-height: 1.7; max-width: 400px; margin: 0 auto 24px; }
+.result-tags { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+.result-tag {
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 99px;
+  background: var(--gray-light);
+  color: var(--gray);
+}
+
+/* FOOTER */
+.footer {
+  background: var(--dark);
+  padding: 48px 24px;
+  text-align: center;
+  margin-top: 80px;
+}
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 12px;
+}
+.footer-note { font-size: 13px; color: rgba(255,255,255,0.35); max-width: 500px; margin: 0 auto; }
+
+/* ACCENT */
+.accent-red { color: var(--red); }
+.chip {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 99px;
+  font-weight: 500;
+}
+.chip-warn { background: #fef3c7; color: #92400e; }
+.chip-good { background: #d1fae5; color: #065f46; }
+.chip-info { background: #dbeafe; color: #1e40af; }
+
+/* STICKY SCROLL ANIMATION */
+.animate-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.animate-in.visible { opacity: 1; transform: translateY(0); }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .info-label { width: 90px; }
+  .comp-table { font-size: 12px; }
+  .comp-table th, .comp-table td { padding: 10px 12px; }
+  .calc-card { padding: 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-leaf">🍁</div>
+  <div class="hero-tag">加拿大語言學校完整攻略 2026 ✦ 官方資料更新</div>
+  <h1>ILAC <span>vs</span> ILSC<br>你該選哪一間？</h1>
+  <p>城市校區、課程強度、住宿費用、交通資訊，一頁搞定所有你需要知道的事</p>
+  <div class="hero-chips">
+    <div class="hero-chip">🏙️ 多倫多 · 溫哥華 · 蒙特婁</div>
+    <div class="hero-chip">📚 課程強度比較</div>
+    <div class="hero-chip">🏠 住宿費用計算</div>
+    <div class="hero-chip">🧭 適合你的導引</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav-wrap">
+  <div class="nav-inner">
+    <button class="nav-btn active" onclick="scrollToSection('overview')">總覽比較</button>
+    <button class="nav-btn" onclick="scrollToSection('cities')">城市與校區</button>
+    <button class="nav-btn" onclick="scrollToSection('courses')">課程強度</button>
+    <button class="nav-btn" onclick="scrollToSection('housing')">住宿費用</button>
+    <button class="nav-btn" onclick="scrollToSection('calculator')">費用計算</button>
+    <button class="nav-btn" onclick="scrollToSection('quiz')">適合我嗎？</button>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- ── SECTION 1: 總覽 ── -->
+  <div id="overview" class="section-gap animate-in">
+    <div class="sec-title">兩校核心差異</div>
+    <div class="sec-sub">從規模、分級、課程到學費，一次看清楚</div>
+
+    <div class="tab-group">
+      <button class="tab-btn active" onclick="switchOverviewTab('both')">整體比較</button>
+      <button class="tab-btn ilac-tab" onclick="switchOverviewTab('ilac')">只看 ILAC</button>
+      <button class="tab-btn ilsc-tab" onclick="switchOverviewTab('ilsc')">只看 ILSC</button>
+    </div>
+
+    <div id="tab-both" class="panel active">
+      <div style="overflow-x:auto;">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>比較項目</th>
+            <th>🔵 ILAC</th>
+            <th>🟢 ILSC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>全名</td><td>International Language Academy of Canada</td><td>International Language School of Canada</td></tr>
+          <tr><td>創立年份</td><td>1997 年</td><td>1991 年</td></tr>
+          <tr><td>加拿大城市</td><td>多倫多、溫哥華</td><td><span class="win">溫哥華、多倫多、蒙特婁</span></td></tr>
+          <tr><td>分級制度</td><td><span class="win">17 個等級（最細緻）</span></td><td>10–11 個等級</td></tr>
+          <tr><td>升級考試</td><td><span class="win">每 2 週一次</span></td><td>每 4 週一次</td></tr>
+          <tr><td>課程選修</td><td>必修 + 選修（結構化）</td><td><span class="win">130+ 種課，高度客製</span></td></tr>
+          <tr><td>語言政策</td><td>鼓勵英語</td><td><span class="win">校區內嚴格 English Only</span></td></tr>
+          <tr><td>大學銜接</td><td>82+ 所加拿大院校</td><td><span class="win">700+ 全球（加、澳、美）</span></td></tr>
+          <tr><td>學費（1–10週）</td><td>Intensive $430 · Power $480 CAD/週</td><td><span class="win">FTI $480 · FT AM $430 CAD/週</span></td></tr>
+          <tr><td>台灣人比例</td><td>中等</td><td><span class="win">3–5%（極少）</span></td></tr>
+          <tr><td>法語課程</td><td>無</td><td><span class="win">蒙特婁校區可學法語</span></td></tr>
+          <tr><td>課外活動</td><td><span class="win">豐富，有社群感</span></td><td>有，但相對自主</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div id="tab-ilac" class="panel">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-head">
+            <div class="card-icon" style="background:var(--ilac-light);">🏫</div>
+            <div><div class="card-title">ILAC 核心特色</div><div class="card-sub">International Language Academy of Canada</div></div>
+          </div>
+          <div class="info-row"><span class="info-label">創立</span><span class="info-value">1997 年</span></div>
+          <div class="info-row"><span class="info-label">城市</span><span class="info-value">多倫多 · 溫哥華</span></div>
+          <div class="info-row"><span class="info-label">分級</span><span class="info-value">17 個等級（最細）</span></div>
+          <div class="info-row"><span class="info-label">每年學生</span><span class="info-value">14,000 人以上</span></div>
+          <div class="info-row"><span class="info-label">國籍多樣</span><span class="info-value">75 個以上國家</span></div>
+          <div class="info-row"><span class="info-label">大學合作</span><span class="info-value">加拿大 82 所以上</span></div>
+          <div class="info-row"><span class="info-label">Intensive 學費</span><span class="info-value">$430 CAD/週（1–10週）</span></div>
+          <div class="info-row"><span class="info-label">Power 學費</span><span class="info-value">$480 CAD/週（1–10週）</span></div>
+          <div class="info-row"><span class="info-label">Registration Fee</span><span class="info-value">CAD $225（一次性）</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="card-icon" style="background:#fef9c3;">✅</div>
+            <div><div class="card-title">ILAC 適合對象</div></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px">
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--dark)"><span style="color:var(--red);font-size:16px;flex-shrink:0">•</span>想要細緻分班、每兩週掌握進度</div>
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--dark)"><span style="color:var(--red);font-size:16px;flex-shrink:0">•</span>偏好多倫多城市生活</div>
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--dark)"><span style="color:var(--red);font-size:16px;flex-shrink:0">•</span>重視課外活動與社群氛圍</div>
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--dark)"><span style="color:var(--red);font-size:16px;flex-shrink:0">•</span>想用 Power English 短期衝刺</div>
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--gray)"><span style="color:#f59e0b;font-size:16px;flex-shrink:0">⚠</span>初學者注意：低級班可能難開班</div>
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--gray)"><span style="color:#f59e0b;font-size:16px;flex-shrink:0">⚠</span>學費相對較高</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-ilsc" class="panel">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-head">
+            <div class="card-icon" style="background:var(--ilsc-light);">🌿</div>
+            <div><div class="card-title">ILSC 核心特色</div><div class="card-sub">International Language School of Canada</div></div>
+          </div>
+          <div class="info-row"><span class="info-label">創立</span><span class="info-value">1991 年</span></div>
+          <div class="info-row"><span class="info-label">城市</span><span class="info-value">溫哥華 · 多倫多 · 蒙特婁</span></div>
+          <div class="info-row"><span class="info-label">分級</span><span class="info-value">10–11 個等級</span></div>
+          <div class="info-row"><span class="info-label">課程選擇</span><span class="info-value">130 種以上</span></div>
+          <div class="info-row"><span class="info-label">台灣人</span><span class="info-value">約 3–5%（極少）</span></div>
+          <div class="info-row"><span class="info-label">FTI 學費（多/溫）</span><span class="info-value">$480 CAD/週（1–11週）</span></div>
+          <div class="info-row"><span class="info-label">FTI 學費（蒙特婁）</span><span class="info-value">$470 CAD/週（1–11週）</span></div>
+          <div class="info-row"><span class="info-label">Registration Fee</span><span class="info-value">CAD $220（一次性）</span></div>
+          <div class="info-row"><span class="info-label">大學合作</span><span class="info-value">全球 700 所以上</span></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="card-icon" style="background:#f0fdf4;">✅</div>
+            <div><div class="card-title">ILSC 適合對象</div></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px">
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--dark)"><span style="color:var(--ilsc);font-size:16px;flex-shrink:0">•</span>想自由搭配課程、高度彈性</div>
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--dark)"><span style="color:var(--ilsc);font-size:16px;flex-shrink:0">•</span>希望台灣人極少、全沉浸英語</div>
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--dark)"><span style="color:var(--ilsc);font-size:16px;flex-shrink:0">•</span>想去溫哥華（ILSC 溫哥華最大）</div>
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--dark)"><span style="color:var(--ilsc);font-size:16px;flex-shrink:0">•</span>想銜接澳洲或美國大學</div>
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--dark)"><span style="color:var(--ilsc);font-size:16px;flex-shrink:0">•</span>有興趣同時接觸法語（蒙特婁）</div>
+            <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--gray)"><span style="color:#f59e0b;font-size:16px;flex-shrink:0">⚠</span>作業多、規定嚴，需有英語基礎</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 2: 城市 ── -->
+  <div id="cities" class="section-gap animate-in">
+    <div class="sec-title">城市與校區</div>
+    <div class="sec-sub">點選城市查看詳細資訊、交通方式與城市特色</div>
+
+    <div class="city-filter">
+      <button class="city-btn active" onclick="filterCity('all')">🌎 全部</button>
+      <button class="city-btn" onclick="filterCity('toronto')">🏙️ 多倫多</button>
+      <button class="city-btn" onclick="filterCity('vancouver')">🌊 溫哥華</button>
+      <button class="city-btn" onclick="filterCity('montreal')">🗼 蒙特婁</button>
+    </div>
+
+    <!-- TORONTO -->
+    <div class="city-item show" data-city="toronto" style="margin-bottom:16px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <div style="font-size:24px">🏙️</div>
+        <div>
+          <div style="font-size:18px;font-weight:600;font-family:'Playfair Display',serif">多倫多 Toronto</div>
+          <div style="font-size:13px;color:var(--gray)">加拿大最大城市 · 人口 600 萬+ · 兩校皆有</div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card" style="border-top:3px solid var(--ilac)">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px">
+            <div><div style="font-weight:600;color:var(--dark);margin-bottom:2px">ILAC 多倫多</div><div style="font-size:12px;color:var(--gray)">多倫多第一大語言學校</div></div>
+            <span class="school-pill pill-ilac">ILAC</span>
+          </div>
+          <div class="info-row"><span class="info-label">校區數</span><span class="info-value">6 個市中心校區</span></div>
+          <div class="info-row"><span class="info-label">主校區</span><span class="info-value">920 Yonge St（Yorkville）</span></div>
+          <div class="info-row"><span class="info-label">地鐵站</span><span class="info-value">Bloor-Yonge 站步行 2 分鐘</span></div>
+          <div class="info-row"><span class="info-label">教室數</span><span class="info-value">138 間</span></div>
+          <div class="info-row"><span class="info-label">學生人數</span><span class="info-value">1,200–1,500 人</span></div>
+          <div class="info-row"><span class="info-label">交通工具</span><span class="info-value">TTC 地鐵 + 電車 + 公車</span></div>
+          <div style="margin-top:12px;padding:10px 12px;background:var(--ilac-light);border-radius:8px;font-size:12px;color:var(--ilac)">
+            📌 旁邊就是加拿大最大公立圖書館（Metro Reference Library），鄰近 Yorkville 精品購物區
+          </div>
+        </div>
+        <div class="card" style="border-top:3px solid var(--ilsc)">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px">
+            <div><div style="font-weight:600;color:var(--dark);margin-bottom:2px">ILSC 多倫多</div><div style="font-size:12px;color:var(--gray)">精緻規模，大學銜接強</div></div>
+            <span class="school-pill pill-ilsc">ILSC</span>
+          </div>
+          <div class="info-row"><span class="info-label">校區</span><span class="info-value">443 University Ave 3F</span></div>
+          <div class="info-row"><span class="info-label">地鐵站</span><span class="info-value">University 站步行 3 分鐘</span></div>
+          <div class="info-row"><span class="info-label">地點特色</span><span class="info-value">金融區旁，市中心核心</span></div>
+          <div class="info-row"><span class="info-label">學生人數</span><span class="info-value">800–900 人</span></div>
+          <div class="info-row"><span class="info-label">安省合作</span><span class="info-value">20+ 所大學院校</span></div>
+          <div class="info-row"><span class="info-label">特色課程</span><span class="info-value">English through Toronto</span></div>
+          <div style="margin-top:12px;padding:10px 12px;background:var(--ilsc-light);border-radius:8px;font-size:12px;color:var(--ilsc)">
+            📌 鄰近市政廳、Eaton Centre 購物中心、CN Tower（30 分鐘地鐵）
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:12px;background:var(--cream);">
+        <div style="font-weight:600;margin-bottom:12px;font-size:14px">🚇 多倫多交通資訊</div>
+        <div class="grid-3" style="gap:12px">
+          <div style="background:var(--white);border-radius:10px;padding:14px">
+            <div style="font-size:11px;color:var(--gray);margin-bottom:4px">交通系統</div>
+            <div style="font-size:13px;font-weight:500">TTC 地鐵 4 線<br>+ 電車 + 公車</div>
+          </div>
+          <div style="background:var(--white);border-radius:10px;padding:14px">
+            <div style="font-size:11px;color:var(--gray);margin-bottom:4px">月票費用</div>
+            <div style="font-size:18px;font-weight:600;color:var(--red)">~$156</div>
+            <div style="font-size:11px;color:var(--gray)">CAD/月（Presto 卡）</div>
+          </div>
+          <div style="background:var(--white);border-radius:10px;padding:14px">
+            <div style="font-size:11px;color:var(--gray);margin-bottom:4px">生活費估算</div>
+            <div style="font-size:18px;font-weight:600;color:var(--red)">$2,400+</div>
+            <div style="font-size:11px;color:var(--gray)">CAD/月（含住宿）</div>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:13px;color:var(--gray);line-height:1.7">
+          ❄️ 氣候：四季分明，冬季可達 -20°C，需備厚外套 ｜ 🌍 最多元文化城市，100+ 個族裔聚居
+        </div>
+      </div>
+    </div>
+
+    <!-- VANCOUVER -->
+    <div class="city-item show" data-city="vancouver" style="margin-bottom:16px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <div style="font-size:24px">🌊</div>
+        <div>
+          <div style="font-size:18px;font-weight:600;font-family:'Playfair Display',serif">溫哥華 Vancouver</div>
+          <div style="font-size:13px;color:var(--gray)">西岸最美城市 · 人口約 100 萬 · 兩校皆有</div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card" style="border-top:3px solid var(--ilac)">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px">
+            <div><div style="font-weight:600;color:var(--dark);margin-bottom:2px">ILAC 溫哥華</div><div style="font-size:12px;color:var(--gray)">港口景觀校區，超值地點</div></div>
+            <span class="school-pill pill-ilac">ILAC</span>
+          </div>
+          <div class="info-row"><span class="info-label">校區數</span><span class="info-value">4 個市中心校區</span></div>
+          <div class="info-row"><span class="info-label">地點</span><span class="info-value">Coal Harbour / Gastown 港口旁</span></div>
+          <div class="info-row"><span class="info-label">交通</span><span class="info-value">Waterfront 站步行 1 分鐘</span></div>
+          <div class="info-row"><span class="info-label">學生人數</span><span class="info-value">800–900 人</span></div>
+          <div class="info-row"><span class="info-label">教室數</span><span class="info-value">57 間（跨 4 校區）</span></div>
+          <div class="info-row"><span class="info-label">景觀</span><span class="info-value">美麗的溫哥華港灣</span></div>
+          <div style="margin-top:12px;padding:10px 12px;background:var(--ilac-light);border-radius:8px;font-size:12px;color:var(--ilac)">
+            📌 緊鄰 Gastown 歷史街區，步行可到知名景點 Steam Clock，港景絕美
+          </div>
+        </div>
+        <div class="card" style="border-top:3px solid var(--ilsc)">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px">
+            <div><div style="font-weight:600;color:var(--dark);margin-bottom:2px">ILSC 溫哥華</div><div style="font-size:12px;color:var(--gray)">全球最大校區，課程最齊全</div></div>
+            <span class="school-pill pill-ilsc">ILSC</span>
+          </div>
+          <div class="info-row"><span class="info-label">校區數</span><span class="info-value">3 個相鄰校區</span></div>
+          <div class="info-row"><span class="info-label">旗艦校</span><span class="info-value">1205 Melville St（2025 新）</span></div>
+          <div class="info-row"><span class="info-label">交通</span><span class="info-value">Burrard Skytrain 步行可達</span></div>
+          <div class="info-row"><span class="info-label">學生人數</span><span class="info-value">常規 1,000+，旺季 1,500+</span></div>
+          <div class="info-row"><span class="info-label">特色</span><span class="info-value">最多課程選擇，Green Leadership</span></div>
+          <div class="info-row"><span class="info-label">旗艦設施</span><span class="info-value">劇場 + ILSC Café 技能課</span></div>
+          <div style="margin-top:12px;padding:10px 12px;background:var(--ilsc-light);border-radius:8px;font-size:12px;color:var(--ilsc)">
+            📌 2025 年全新旗艦校區開幕，鄰近 Robson St、Coal Harbour、Seawall 步行道
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:12px;background:var(--cream);">
+        <div style="font-weight:600;margin-bottom:12px;font-size:14px">🚇 溫哥華交通資訊</div>
+        <div class="grid-3" style="gap:12px">
+          <div style="background:var(--white);border-radius:10px;padding:14px">
+            <div style="font-size:11px;color:var(--gray);margin-bottom:4px">交通系統</div>
+            <div style="font-size:13px;font-weight:500">Skytrain 3 線<br>+ 公車 + 海上巴士</div>
+          </div>
+          <div style="background:var(--white);border-radius:10px;padding:14px">
+            <div style="font-size:11px;color:var(--gray);margin-bottom:4px">月票費用</div>
+            <div style="font-size:18px;font-weight:600;color:var(--red)">~$109–174</div>
+            <div style="font-size:11px;color:var(--gray)">CAD/月（Compass 卡）</div>
+          </div>
+          <div style="background:var(--white);border-radius:10px;padding:14px">
+            <div style="font-size:11px;color:var(--gray);margin-bottom:4px">生活費估算</div>
+            <div style="font-size:18px;font-weight:600;color:var(--red)">$2,600+</div>
+            <div style="font-size:11px;color:var(--gray)">CAD/月（含住宿）</div>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:13px;color:var(--gray);line-height:1.7">
+          🌧️ 氣候：溫和多雨，冬季少雪（偶有）｜ 🏔️ 可滑雪、登山、海邊，戶外活動天堂 ｜ 🎬 好萊塢北方
+        </div>
+      </div>
+    </div>
+
+    <!-- MONTREAL -->
+    <div class="city-item show" data-city="montreal" style="margin-bottom:16px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <div style="font-size:24px">🗼</div>
+        <div>
+          <div style="font-size:18px;font-weight:600;font-family:'Playfair Display',serif">蒙特婁 Montréal <span class="chip chip-good" style="font-size:11px">ILSC 獨有</span></div>
+          <div style="font-size:13px;color:var(--gray)">英法雙語城市 · 加拿大最低生活費 · 僅 ILSC 有校區</div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card" style="border-top:3px solid var(--ilsc)">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px">
+            <div><div style="font-weight:600;color:var(--dark);margin-bottom:2px">ILSC 蒙特婁</div><div style="font-size:12px;color:var(--gray)">英法雙語沉浸，魁北克移民跳板</div></div>
+            <span class="school-pill pill-ilsc">ILSC 獨有</span>
+          </div>
+          <div class="info-row"><span class="info-label">地址</span><span class="info-value">550 Sherbrooke St W（McGill 大學旁）</span></div>
+          <div class="info-row"><span class="info-label">Metro</span><span class="info-value">McGill 站步行約 5 分鐘</span></div>
+          <div class="info-row"><span class="info-label">語言</span><span class="info-value">英語 + 法語課程</span></div>
+          <div class="info-row"><span class="info-label">台灣人</span><span class="info-value">約 1%（全三城市最低）</span></div>
+          <div class="info-row"><span class="info-label">法語課</span><span class="info-value">TEF / TEFaQ 備考（移民用）</span></div>
+          <div class="info-row"><span class="info-label">特色</span><span class="info-value">Creative & Cultural English、法語電影課</span></div>
+          <div style="margin-top:12px;padding:10px 12px;background:var(--ilsc-light);border-radius:8px;font-size:12px;color:var(--ilsc)">
+            📌 若有意申請魁北克省移民（QSWP），蒙特婁是練習法語的最佳環境
+          </div>
+        </div>
+        <div class="card" style="background:var(--cream);">
+          <div style="font-weight:600;margin-bottom:12px;font-size:14px">🚇 蒙特婁交通 + 城市</div>
+          <div class="info-row"><span class="info-label">地鐵</span><span class="info-value">Metro 4 條線 + 公車</span></div>
+          <div class="info-row"><span class="info-label">月票</span><span class="info-value">約 CAD $94/月（最便宜）</span></div>
+          <div class="info-row"><span class="info-label">生活費</span><span class="info-value">$1,800+ CAD/月（三城最低）</span></div>
+          <div class="info-row"><span class="info-label">氣候</span><span class="info-value">冬嚴寒，雪多；夏熱</span></div>
+          <div class="info-row"><span class="info-label">文化</span><span class="info-value">歐洲風格、藝術節、美食</span></div>
+          <div style="margin-top:12px;padding:10px 12px;background:#fef3c7;border-radius:8px;font-size:12px;color:#92400e">
+            ⚠️ 注意：蒙特婁不適合完全英語沉浸，街上日常生活仍以法語為主
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 3: 課程強度 ── -->
+  <div id="courses" class="section-gap animate-in">
+    <div class="sec-title">課程強度比較</div>
+    <div class="sec-sub">每週上課時數、課程架構與適合情境</div>
+
+    <div class="grid-2" style="margin-bottom:24px">
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+          <span class="school-pill pill-ilac" style="font-size:13px;padding:4px 12px">ILAC</span>
+          <span style="font-size:13px;color:var(--gray)">每節課 45 分鐘</span>
+        </div>
+        <div class="bar-group">
+          <div class="bar-item">
+            <div class="bar-name">Intensive（密集）</div>
+            <div class="bar-track"><div class="bar-fill" data-width="79" style="width:0%;background:var(--ilac)"></div></div>
+            <div class="bar-val">30 節/週</div>
+          </div>
+          <div class="bar-note" style="color:var(--gray);font-size:11px;margin-bottom:8px">必修 26 + 選修 4 ｜ 約 22.5 小時/週 ｜ <strong>2026：$430/週（1–10週）</strong></div>
+          <div class="bar-item">
+            <div class="bar-name">Power English</div>
+            <div class="bar-track"><div class="bar-fill" data-width="100" style="width:0%;background:#0c447c"></div></div>
+            <div class="bar-val">38 節/週</div>
+          </div>
+          <div class="bar-note" style="color:var(--gray);font-size:11px">必修 26 + 選修 4 + 強化 8 ｜ 約 28.5 小時/週 ｜ <strong>2026：$480/週（1–10週）</strong></div>
+        </div>
+        <div style="margin-top:16px;background:var(--ilac-light);border-radius:10px;padding:12px 14px;font-size:12px;color:var(--navy);line-height:1.7">
+          <strong>選修彈性：</strong>口說、聽力、發音、文法、寫作、IELTS、TOEFL、商業英語、時事辯論等<br>
+          <strong>Power 強化課可選：</strong>口說溝通強化 或 學術讀寫強化
+        </div>
+      </div>
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+          <span class="school-pill pill-ilsc" style="font-size:13px;padding:4px 12px">ILSC</span>
+          <span style="font-size:13px;color:var(--gray)">每節課 50 分鐘</span>
+        </div>
+        <div class="bar-group">
+          <div class="bar-item">
+            <div class="bar-name">PT 下午（兼職）</div>
+            <div class="bar-track"><div class="bar-fill" data-width="37" style="width:0%;background:#9FE1CB"></div></div>
+            <div class="bar-val">15 節/週</div>
+          </div>
+          <div class="bar-note" style="color:var(--gray);font-size:11px;margin-bottom:4px">多/溫 $210 · 蒙 $200 /週</div>
+          <div class="bar-item">
+            <div class="bar-name">PT 上午（兼職）</div>
+            <div class="bar-track"><div class="bar-fill" data-width="42" style="width:0%;background:#5DCAA5"></div></div>
+            <div class="bar-val">17 節/週</div>
+          </div>
+          <div class="bar-note" style="color:var(--gray);font-size:11px;margin-bottom:4px">多/溫 $325 · 蒙 $315 /週</div>
+          <div class="bar-item">
+            <div class="bar-name">FT 上午/下午</div>
+            <div class="bar-track"><div class="bar-fill" data-width="63" style="width:0%;background:#1D9E75"></div></div>
+            <div class="bar-val">24 節/週</div>
+          </div>
+          <div class="bar-note" style="color:var(--gray);font-size:11px;margin-bottom:4px">多/溫 $430 · 蒙 $420 /週</div>
+          <div class="bar-item">
+            <div class="bar-name">FTI（密集全職）</div>
+            <div class="bar-track"><div class="bar-fill" data-width="79" style="width:0%;background:var(--ilsc)"></div></div>
+            <div class="bar-val">30 節/週</div>
+          </div>
+          <div class="bar-note" style="color:var(--gray);font-size:11px">多/溫 $480 · 蒙 $470 /週（1–11週）</div>
+        </div>
+        <div style="margin-top:16px;background:var(--ilsc-light);border-radius:10px;padding:12px 14px;font-size:12px;color:#065f46;line-height:1.7">
+          <strong>彈性時段：</strong>上午班適合下午打工；下午班可上午自由活動<br>
+          <strong>130+ 選修：</strong>法語、醫護英語、Green Leadership、咖啡職能課等
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="overflow-x:auto">
+      <div style="font-weight:600;margin-bottom:16px;font-size:15px">課程方案對照表</div>
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>課程方案</th>
+            <th>學校</th>
+            <th>節數/週</th>
+            <th>2026 學費/週</th>
+            <th>適合對象</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>PT 下午（兼職）</td><td><span class="school-pill pill-ilsc">ILSC</span></td><td>15 節</td><td>多/溫 $210 · 蒙 $200</td><td>想打工、生活步調慢</td></tr>
+          <tr><td>PT 上午（兼職）</td><td><span class="school-pill pill-ilsc">ILSC</span></td><td>17 節</td><td>多/溫 $325 · 蒙 $315</td><td>下午自由活動</td></tr>
+          <tr><td>FT 上午/下午</td><td><span class="school-pill pill-ilsc">ILSC</span></td><td>24 節</td><td>多/溫 $430 · 蒙 $420</td><td>標準學習節奏</td></tr>
+          <tr><td>Intensive 密集</td><td><span class="school-pill pill-ilac">ILAC</span></td><td>30 節</td><td>$430（1–10週）</td><td>多數留學生首選</td></tr>
+          <tr><td>FTI 全職密集</td><td><span class="school-pill pill-ilsc">ILSC</span></td><td>30 節</td><td>多/溫 $480 · 蒙 $470</td><td>多數留學生首選</td></tr>
+          <tr><td>Power English 超密集</td><td><span class="school-pill pill-ilac">ILAC</span></td><td>38 節</td><td>$480（1–10週）</td><td>短期衝刺、最快進步</td></tr>
+        </tbody>
+      </table>
+      <div style="margin-top:10px;font-size:11px;color:var(--gray)">💡 注意：ILAC 每節 45 分鐘；ILSC 每節 50 分鐘。以上為 1–10/11 週費率，長期就讀有折扣（ILAC 44週+ 降至 $375/$440；ILSC 36週+ 降至 $440/$430）。資料來源：ILAC 官網（更新 2026-05-01）、ILSC 2026 Official Pricelist PDF。</div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 4: 住宿 ── -->
+  <div id="housing" class="section-gap animate-in">
+    <div class="sec-title">住宿費用</div>
+    <div class="sec-sub">各城市、各類型住宿的每週費用參考（CAD）</div>
+
+    <div class="grid-3" style="margin-bottom:24px">
+      <div class="card">
+        <div class="card-head">
+          <div class="card-icon" style="background:#fef3c7;font-size:22px">🏡</div>
+          <div><div class="card-title">寄宿家庭</div><div class="card-sub">Homestay</div></div>
+        </div>
+        <div style="margin-bottom:8px;font-size:12px;font-weight:600;color:var(--gray)">ILAC（多倫多 / 溫哥華）官方 2026</div>
+        <div class="info-row"><span class="info-label">含三餐（旺季 6–8月）</span><span class="info-value accent-red">$400/週</span></div>
+        <div class="info-row"><span class="info-label">含三餐（淡季 9–5月）</span><span class="info-value accent-red">$360/週</span></div>
+        <div class="info-row"><span class="info-label">含兩餐（旺季）</span><span class="info-value">$375/週</span></div>
+        <div class="info-row"><span class="info-label">含兩餐（淡季）</span><span class="info-value">$340/週</span></div>
+        <div style="height:1px;background:var(--border);margin:12px 0"></div>
+        <div style="margin-bottom:8px;font-size:12px;font-weight:600;color:var(--gray)">ILSC（三城市）</div>
+        <div class="info-row"><span class="info-label">含三餐</span><span class="info-value accent-red">$280–350/週</span></div>
+        <div style="margin-top:12px;padding:10px;background:#fef3c7;border-radius:8px;font-size:11px;color:#92400e">
+          ✅ 最划算 ｜ 英語沉浸最強 ｜ 需遵守家規
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-icon" style="background:#ede9fe;font-size:22px">🏢</div>
+          <div><div class="card-title">學生宿舍</div><div class="card-sub">Student Residence（單人房）</div></div>
+        </div>
+        <div style="margin-bottom:8px;font-size:12px;font-weight:600;color:var(--gray)">ILAC 官方 2026</div>
+        <div class="info-row"><span class="info-label">多倫多（單人）</span><span class="info-value accent-red">$375 起/週</span></div>
+        <div class="info-row"><span class="info-label">溫哥華（單人）</span><span class="info-value accent-red">$415 起/週</span></div>
+        <div class="info-row"><span class="info-label">安置費</span><span class="info-value">CAD $250（一次）</span></div>
+        <div style="height:1px;background:var(--border);margin:12px 0"></div>
+        <div style="margin-bottom:8px;font-size:12px;font-weight:600;color:var(--gray)">ILSC</div>
+        <div class="info-row"><span class="info-label">三城市（單人）</span><span class="info-value accent-red">$280–450/週</span></div>
+        <div style="margin-top:12px;padding:10px;background:#ede9fe;border-radius:8px;font-size:11px;color:#5b21b6">
+          🔑 單人房 = 自己的臥室，但廚房、浴室多為共用
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-icon" style="background:#dcfce7;font-size:22px">🏠</div>
+          <div><div class="card-title">獨立公寓</div><div class="card-sub">Private Apartment</div></div>
+        </div>
+        <div class="info-row"><span class="info-label">多倫多</span><span class="info-value accent-red">$600–650/週</span></div>
+        <div class="info-row"><span class="info-label">溫哥華</span><span class="info-value accent-red">$600–700+/週</span></div>
+        <div class="info-row"><span class="info-label">蒙特婁</span><span class="info-value accent-red">$480–600/週</span></div>
+        <div style="height:1px;background:var(--border);margin:12px 0"></div>
+        <div style="font-size:12px;color:var(--gray);line-height:1.7;margin-top:4px">
+          最大自由度，完全獨立空間，但費用最高。適合有工作收入的學生或想長租者。
+        </div>
+        <div style="margin-top:12px;padding:10px;background:#dcfce7;border-radius:8px;font-size:11px;color:#065f46">
+          💡 溫哥華租金整體比多倫多高，蒙特婁最便宜
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="background:var(--cream2);border-style:dashed;">
+      <div style="font-weight:600;margin-bottom:10px;font-size:14px">📌 住宿選擇重點提醒</div>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px">
+        <div style="font-size:13px;color:var(--dark);line-height:1.6">
+          <strong>最少入住：</strong>兩校皆要求最短 4 週<br>
+          <strong>首 4 週費用：</strong>通常不可退費<br>
+          <strong>收費方式：</strong>週六到週六計算
+        </div>
+        <div style="font-size:13px;color:var(--dark);line-height:1.6">
+          <strong>旺季（6–8 月）：</strong>寄宿家庭費用更高<br>
+          <strong>溫哥華 vs 多倫多：</strong>溫哥華宿舍普遍貴 $50/週<br>
+          <strong>蒙特婁：</strong>三城市中生活費最低
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 5: 計算器 ── -->
+  <div id="calculator" class="section-gap animate-in">
+    <div class="sec-title">每月費用估算</div>
+    <div class="sec-sub">根據你的選擇，計算每月約需準備多少預算</div>
+
+    <div class="calc-card">
+      <div class="calc-title">費用計算器</div>
+      <div class="calc-sub">以下為參考數值，實際費用請向學校確認</div>
+      <div class="calc-grid">
+        <div>
+          <div class="calc-label">選擇學校</div>
+          <select class="calc-select" id="calc-school" onchange="calcUpdate()">
+            <option value="ilac">ILAC</option>
+            <option value="ilsc">ILSC</option>
+          </select>
+        </div>
+        <div>
+          <div class="calc-label">城市</div>
+          <select class="calc-select" id="calc-city" onchange="calcUpdate()">
+            <option value="toronto">多倫多</option>
+            <option value="vancouver">溫哥華</option>
+            <option value="montreal">蒙特婁（僅 ILSC）</option>
+          </select>
+        </div>
+        <div>
+          <div class="calc-label">住宿類型</div>
+          <select class="calc-select" id="calc-housing" onchange="calcUpdate()">
+            <option value="homestay2">寄宿家庭（含兩餐）</option>
+            <option value="homestay3">寄宿家庭（含三餐）</option>
+            <option value="dorm">學生宿舍（單人房）</option>
+            <option value="apartment">獨立公寓</option>
+          </select>
+        </div>
+      </div>
+      <div class="calc-result" id="calc-result">
+        <div class="calc-items">
+          <div class="calc-item">
+            <div class="calc-item-label">語言學費</div>
+            <div class="calc-item-val" id="res-tuition">-</div>
+          </div>
+          <div class="calc-item">
+            <div class="calc-item-label">住宿費</div>
+            <div class="calc-item-val" id="res-housing">-</div>
+          </div>
+          <div class="calc-item">
+            <div class="calc-item-label">生活費</div>
+            <div class="calc-item-val" id="res-living">-</div>
+          </div>
+          <div class="calc-item">
+            <div class="calc-item-label">交通費</div>
+            <div class="calc-item-val" id="res-transit">-</div>
+          </div>
+        </div>
+        <div>
+          <div class="calc-total-label">每月總估算</div>
+          <div class="calc-total-num" id="res-total">-</div>
+          <div class="calc-total-sub">CAD / 月（參考值）</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 6: Quiz ── -->
+  <div id="quiz" class="section-gap animate-in">
+    <div class="sec-title">適合我嗎？</div>
+    <div class="sec-sub">回答 5 個問題，找出最適合你的學校與城市</div>
+
+    <div class="quiz-card">
+      <div class="quiz-progress" id="quiz-progress"></div>
+      <div id="quiz-questions">
+        <div class="quiz-q" id="quiz-question"></div>
+        <div class="quiz-options" id="quiz-options"></div>
+        <div class="quiz-btns">
+          <button class="btn btn-ghost" id="quiz-back" onclick="quizBack()" style="display:none">← 上一題</button>
+          <button class="btn btn-primary" id="quiz-next" onclick="quizNext()" disabled>下一題 →</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="quiz-result">
+        <div class="result-box">
+          <div class="result-emoji" id="r-emoji"></div>
+          <div class="result-school" id="r-school"></div>
+          <div class="result-desc" id="r-desc"></div>
+          <div class="result-tags" id="r-tags"></div>
+          <button class="btn btn-ghost" onclick="quizReset()">重新測驗</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-logo">🍁 加拿大語言學校攻略</div>
+  <div class="footer-note">資料來源：ILAC 官網（最後更新 2026-05-01）· ILSC 2026 Official Pricelist PDF（Jan–Dec 2026 有效）。學費、住宿費及其他費用為 2026 官方公告數值，部分費用依課程長度有折扣。生活費與交通費為參考估算，個人差異大。最終請向學校或授權代辦確認報價。</div>
+</div>
+
+<script>
+// ── NAV ──
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const offset = 60;
+  setTimeout(() => window.scrollBy(0, -offset), 500);
+}
+
+// Update nav on scroll
+const navBtns = document.querySelectorAll('.nav-btn');
+const sections = ['overview','cities','courses','housing','calculator','quiz'];
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && el.getBoundingClientRect().top < 120) current = id;
+  });
+  navBtns.forEach((btn, i) => {
+    btn.classList.toggle('active', sections[i] === current || (current === '' && i === 0));
+  });
+});
+
+// ── TABS ──
+function switchOverviewTab(tab) {
+  ['both','ilac','ilsc'].forEach(t => {
+    document.getElementById('tab-'+t).classList.toggle('active', t === tab);
+  });
+  document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+    btn.classList.toggle('active', ['both','ilac','ilsc'][i] === tab);
+  });
+}
+
+// ── CITY FILTER ──
+function filterCity(city) {
+  document.querySelectorAll('.city-btn').forEach(b => b.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  document.querySelectorAll('.city-item').forEach(el => {
+    if (city === 'all' || el.dataset.city === city) el.classList.add('show');
+    else el.classList.remove('show');
+  });
+}
+
+// ── BARS ANIMATION ──
+function animateBars() {
+  document.querySelectorAll('.bar-fill').forEach(bar => {
+    const w = bar.dataset.width;
+    if (w) setTimeout(() => bar.style.width = w + '%', 100);
+  });
+}
+
+// ── CALCULATOR ── (based on 2026 official prices, 4-week month estimate)
+const calcData = {
+  // ILAC Intensive $430/wk × 4 = $1720/month
+  ilac: { toronto: 1720, vancouver: 1720 },
+  // ILSC FTI Toronto/Vancouver $480/wk × 4 = $1920; Montreal $470 × 4 = $1880
+  ilsc: { toronto: 1920, vancouver: 1920, montreal: 1880 }
+};
+const housingData = {
+  // ILAC official 2026: homestay 3meals offpeak $360, peak $400; dorm from $375/415
+  toronto:   { homestay2: 1360, homestay3: 1440, dorm: 1500, apartment: 2600 },
+  vancouver: { homestay2: 1500, homestay3: 1600, dorm: 1660, apartment: 2800 },
+  montreal:  { homestay2: 1100, homestay3: 1260, dorm: 1260, apartment: 2100 }
+};
+const livingData = { toronto: 500, vancouver: 500, montreal: 350 };
+const transitData = { toronto: 156, vancouver: 140, montreal: 94 };
+
+function calcUpdate() {
+  const school = document.getElementById('calc-school').value;
+  const city = document.getElementById('calc-city').value;
+  const housing = document.getElementById('calc-housing').value;
+
+  // Montreal only for ILSC
+  const citySelect = document.getElementById('calc-city');
+  const montrealOpt = citySelect.querySelector('option[value="montreal"]');
+  if (school === 'ilac') {
+    montrealOpt.disabled = true;
+    if (city === 'montreal') citySelect.value = 'toronto';
+  } else {
+    montrealOpt.disabled = false;
+  }
+
+  const c = document.getElementById('calc-city').value;
+  const tuition = calcData[school]?.[c] || 0;
+  const h = housingData[c]?.[housing] || 0;
+  const living = livingData[c] || 0;
+  const transit = transitData[c] || 0;
+  const total = tuition + h + living + transit;
+
+  document.getElementById('res-tuition').textContent = '$' + tuition.toLocaleString() + ' CAD';
+  document.getElementById('res-housing').textContent = '$' + h.toLocaleString() + ' CAD';
+  document.getElementById('res-living').textContent = '$' + living.toLocaleString() + ' CAD';
+  document.getElementById('res-transit').textContent = '$' + transit.toLocaleString() + ' CAD';
+  document.getElementById('res-total').textContent = '$' + total.toLocaleString();
+}
+calcUpdate();
+
+// ── QUIZ ──
+const quizData = [
+  {
+    q: '你最希望去哪個城市？',
+    opts: ['多倫多（商業之都）', '溫哥華（自然美景）', '蒙特婁（英法雙語）', '哪裡都可以'],
+    key: ['toronto', 'vancouver', 'montreal', 'any']
+  },
+  {
+    q: '你對英語的程度如何？',
+    opts: ['幾乎是零基礎', '有基礎，但不流利', '中等程度，能溝通', '還不錯，想衝更高'],
+    key: ['beginner', 'beginner', 'mid', 'advanced']
+  },
+  {
+    q: '你希望課程結構是什麼樣子？',
+    opts: ['越密集越好，短時間衝刺', '固定結構，清楚知道進度', '彈性自由，可自己搭配', '想兼打工，下午要空著'],
+    key: ['power', 'structured', 'flexible', 'parttime']
+  },
+  {
+    q: '你希望身邊有多少台灣人？',
+    opts: ['沒差，有台灣朋友也好', '越少越好，想完全沉浸', '不在乎'],
+    key: ['nocare', 'less', 'nocare']
+  },
+  {
+    q: '你的主要目標是？',
+    opts: ['純粹提升英文，輕鬆生活', '銜接加拿大大學或學院', '想之後移民加拿大', '探索，還沒有明確計畫'],
+    key: ['english', 'pathway', 'immigration', 'explore']
+  }
+];
+
+let quizAnswers = [];
+let currentQ = 0;
+
+function quizRender() {
+  const q = quizData[currentQ];
+  document.getElementById('quiz-question').textContent = q.q;
+  const optsEl = document.getElementById('quiz-options');
+  optsEl.innerHTML = '';
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'quiz-opt' + (quizAnswers[currentQ] === i ? ' selected' : '');
+    btn.textContent = opt;
+    btn.onclick = () => {
+      quizAnswers[currentQ] = i;
+      document.querySelectorAll('.quiz-opt').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      document.getElementById('quiz-next').disabled = false;
+    };
+    optsEl.appendChild(btn);
+  });
+  // progress
+  const prog = document.getElementById('quiz-progress');
+  prog.innerHTML = '';
+  quizData.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'quiz-dot' + (i < currentQ || quizAnswers[i] !== undefined ? ' done' : '');
+    prog.appendChild(d);
+  });
+  // buttons
+  document.getElementById('quiz-back').style.display = currentQ > 0 ? 'block' : 'none';
+  const nextBtn = document.getElementById('quiz-next');
+  nextBtn.textContent = currentQ === quizData.length - 1 ? '查看結果 →' : '下一題 →';
+  nextBtn.disabled = quizAnswers[currentQ] === undefined;
+}
+
+function quizNext() {
+  if (quizAnswers[currentQ] === undefined) return;
+  if (currentQ < quizData.length - 1) {
+    currentQ++;
+    quizRender();
+  } else {
+    quizShowResult();
+  }
+}
+
+function quizBack() {
+  if (currentQ > 0) { currentQ--; quizRender(); }
+}
+
+function quizShowResult() {
+  const keys = quizAnswers.map((a, i) => quizData[i].key[a]);
+  // scoring
+  let ilacScore = 0, ilscScore = 0;
+  if (keys[0] === 'toronto') ilacScore += 2;
+  if (keys[0] === 'vancouver') ilscScore += 2;
+  if (keys[0] === 'montreal') { ilscScore += 3; }
+  if (keys[1] === 'beginner') ilacScore += 1;
+  if (keys[1] === 'advanced') { ilacScore += 1; ilscScore += 1; }
+  if (keys[2] === 'power' || keys[2] === 'structured') ilacScore += 2;
+  if (keys[2] === 'flexible' || keys[2] === 'parttime') ilscScore += 2;
+  if (keys[3] === 'less') ilscScore += 2;
+  if (keys[4] === 'pathway' && keys[0] !== 'montreal') { ilacScore += 1; ilscScore += 1; }
+  if (keys[4] === 'immigration' && keys[0] === 'montreal') ilscScore += 3;
+
+  let result;
+  const isMontreal = keys[0] === 'montreal';
+
+  if (isMontreal) {
+    result = {
+      emoji: '🗼', school: 'ILSC 蒙特婁', cls: 'result-ilsc',
+      desc: '蒙特婁是三城中生活費最低，且擁有英法雙語環境的獨特選擇。適合想接觸法語文化、準備魁北克移民，或預算有限的你。',
+      tags: ['生活費最低', '英法雙語', '台灣人 1%', 'Metro 月票最便宜']
+    };
+  } else if (ilacScore > ilscScore + 1) {
+    result = {
+      emoji: '🔵', school: 'ILAC 推薦', cls: 'result-ilac',
+      desc: '根據你的偏好，ILAC 是更適合的選擇。分級最細、每兩週評量、課外活動豐富，適合想快速掌握學習進度的你。' + (keys[0] === 'toronto' ? '多倫多校區是加拿大規模最大的語言學校之一。' : '溫哥華校區位於港口旁，交通極為便利。'),
+      tags: ['17 級精細分班', '每 2 週升級考', 'Power English 可選', keys[0] === 'toronto' ? '多倫多第一大' : '港景校區']
+    };
+  } else if (ilscScore > ilacScore + 1) {
+    result = {
+      emoji: '🟢', school: 'ILSC 推薦', cls: 'result-ilsc',
+      desc: '根據你的偏好，ILSC 更符合你的需求。課程選擇超過 130 種，台灣人比例極低，英語沉浸效果強。' + (keys[0] === 'vancouver' ? '溫哥華校區是全球最大，課程最豐富。' : '多倫多校區位於市中心，Ontario 省合作大學眾多。'),
+      tags: ['130+ 課程', '台灣人 3–5%', 'English Only 政策', '700+ 全球合作院校']
+    };
+  } else {
+    result = {
+      emoji: '🍁', school: '兩校都適合你！', cls: 'result-both',
+      desc: '你的需求兩校都能滿足。建議比較學費後再決定：ILSC 學費通常略低，但 ILAC 的分級制度更細緻。可以先鎖定城市，再選學校。',
+      tags: ['可比較學費再決定', '先選城市更容易', '兩校都有 Pathway', '可諮詢代辦評估']
+    };
+  }
+
+  document.getElementById('quiz-questions').style.display = 'none';
+  const resEl = document.getElementById('quiz-result');
+  resEl.style.display = 'block';
+  document.getElementById('r-emoji').textContent = result.emoji;
+  const schoolEl = document.getElementById('r-school');
+  schoolEl.textContent = result.school;
+  schoolEl.className = 'result-school ' + result.cls;
+  document.getElementById('r-desc').textContent = result.desc;
+  const tagsEl = document.getElementById('r-tags');
+  tagsEl.innerHTML = result.tags.map(t => `<span class="result-tag">${t}</span>`).join('');
+}
+
+function quizReset() {
+  quizAnswers = [];
+  currentQ = 0;
+  document.getElementById('quiz-questions').style.display = 'block';
+  document.getElementById('quiz-result').style.display = 'none';
+  quizRender();
+}
+
+// ── SCROLL ANIMATIONS ──
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      if (e.target.id === 'courses') animateBars();
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+
+// init
+quizRender();
+</script>
+</body>
+</html>
